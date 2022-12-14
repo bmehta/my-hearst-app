@@ -85,12 +85,12 @@ export default  function ContentGrid() {
         <Grid container spacing={1}>
         { dataItems.map((dataItem, index) => {
             return dataItem.fullRow ? (
-                <Grid item xs={12} sm={12}  key={index}>
+                <Grid item xs={12} md={12} sm={12}  key={index}>
                     <Item>{dataItem.data}</Item>
                 </Grid>
 
             ) : (
-                <Grid item xs={12} sm={4} key={index}>
+                <Grid item xs={12} md={4} sm={4} key={index}>
                     <Item>{dataItem.data}</Item>
                 </Grid>
 
